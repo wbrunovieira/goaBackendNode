@@ -1,6 +1,21 @@
 version: "3.9"
 
 services:
+
+  database:
+    image: postgres
+    container_name: database_goa
+    restart: always
+    ports:
+      - 5432:5432
+    environment: 
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=goa
+      - POSTGRES_DB=goa
+    volumes: 
+      - pgdata:/data/postgres
+    
+
   app:
     build: .
     container_name: goa
@@ -8,3 +23,11 @@ services:
       - 3333:3333
     volumes: 
       - .:/usr/app
+    
+    depends_on:
+      - database
+    
+
+volumes:
+   pgdata:
+    driver: local
