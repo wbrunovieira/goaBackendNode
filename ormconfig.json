@@ -6,7 +6,7 @@
     "password":"goa",
     "database":"goa",
     "entities": [
-        "./src/models/*.ts"
+        "./src/entities/*.ts"
     ],
     "migrations": [
         "./src/database/migrations/*.ts"
