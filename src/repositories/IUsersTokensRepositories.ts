@@ -1,4 +1,4 @@
-import { ICreateUserTokenDTO } from "./../../src/modules/accounts/dtos/ICreateUserTokenDTO";
+import { ICreateUserTokenDTO } from "@modules/accounts/dtos/ICreateUserTokenDTO";
 import { UserTokens } from "../entities/UserToken";
 
 interface IUsersTokensRepository {

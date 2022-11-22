@@ -5,6 +5,14 @@
     "rootDir": "./",
     "baseUrl": "./src",
     "outDir": "./dist",
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@container/*": ["container/*"],
+      "@errors/*": ["errors/*"],
+      "@utils/*": ["utils/*"],
+      "@repositories/*": ["repositories/*"]
+    },
     
     "esModuleInterop": true,
     "experimentalDecorators": true,

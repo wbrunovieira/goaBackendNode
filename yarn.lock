@@ -704,6 +704,11 @@
   dependencies:
     "argparse" "^2.0.1"
 
+"json5@^2.2.1":
+  "integrity" "sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA=="
+  "resolved" "https://registry.npmjs.org/json5/-/json5-2.2.1.tgz"
+  "version" "2.2.1"
+
 "jsonwebtoken@^8.5.1":
   "integrity" "sha512-XjwVfRS6jTMsqYs0EsuJ4LGxXV14zQybNd4L2r0UvbVnSF9Af8x7p5MzbJ90Ioz/9TI41/hTCvznF/loiSzn8w=="
   "resolved" "https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz"
@@ -1269,6 +1274,15 @@
     "make-error" "^1.1.1"
     "v8-compile-cache-lib" "^3.0.1"
     "yn" "3.1.1"
+
+"tsconfig-paths@^4.1.0":
+  "integrity" "sha512-AHx4Euop/dXFC+Vx589alFba8QItjF+8hf8LtmuiCwHyI4rHXQtOOENaM8kvYf5fR0dRChy3wzWIZ9WbB7FWow=="
+  "resolved" "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-4.1.0.tgz"
+  "version" "4.1.0"
+  dependencies:
+    "json5" "^2.2.1"
+    "minimist" "^1.2.6"
+    "strip-bom" "^3.0.0"
 
 "tsconfig@^7.0.0":
   "integrity" "sha512-vZXmzPrL+EmC4T/4rVlT2jNVMWCi/O4DIiSj3UHg1OE5kCKbk4mfrXc6dZksLgRM/TZlKnousKH9bbTazUWRRw=="
