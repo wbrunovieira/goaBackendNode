@@ -1,0 +1,117 @@
+
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Goa Documentation",
+        "description": "This is an API Goa backend",
+        "version": "1.0.0",
+        "contact": {
+            "email": "wbrunovieira77@gmail.com"
+        }
+    },
+    "paths": {
+        "/users": {
+            "post": {
+                "tags": [
+                    "Users"
+                ],
+                "sumary": "Create a User",
+                "description": "Create a new User",
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "type": "string"
+                                    }
+
+                                },
+                                "example": {
+                                    "name": "User Name Sample",
+                                    "email": "User email Sample",
+                                    "password": "User password sample"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "description": "User Already exists"
+                    }
+                }
+            }
+            
+        
+       
+    },
+    "/sessions":{
+        "post": {
+            "tags": [
+                "Authentication"
+            ],
+            "sumary": "Create a Authentication",
+            "description": "Create a new Authentication",
+            "security": [
+                {
+                    "bearerAuth": []
+                }
+            ],
+            "requestBody": {
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                               
+                                "email": {
+                                    "type": "string"
+                                },
+                                "password": {
+                                    "type": "string"
+                                }
+
+                            },
+                            "example": {
+                                
+                                "email": "User email Sample",
+                                "password": "User password sample"
+                            }
+                        }
+                    }
+                }
+            },
+            "responses": {
+                "201": {
+                    "description": "Success"
+                },
+                "500": {
+                    "description": "User/ password doest exists"
+                }
+            }
+        }
+        
+   
+
+    }
+    
+}
+}
+    
+    
