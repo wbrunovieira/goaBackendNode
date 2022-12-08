@@ -7,11 +7,12 @@
     "outDir": "./dist",
     "paths": {
       "@modules/*": ["modules/*"],
+      "@errors/*": ["errors/*"],
       "@config/*": ["config/*"],
       "@container/*": ["container/*"],
-      "@errors/*": ["errors/*"],
       "@utils/*": ["utils/*"],
-      "@repositories/*": ["repositories/*"]
+      "@repositories/*": ["repositories/*"],
+      "@entities/*": ["entities/*"]
     },
     
     "esModuleInterop": true,
